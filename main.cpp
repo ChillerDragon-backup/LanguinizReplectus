@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>	
 
 #define RANDOM_MESSAGES 16
 #define MAX_MESSAGE_LEN 256
@@ -53,6 +54,7 @@ void MainBrain(const char* msg)
 
 int main(int argc, char *argv[])
 {
+	srand(time(NULL));
 	if (argc == 2)
 	{
 		MainBrain(argv[1]);
