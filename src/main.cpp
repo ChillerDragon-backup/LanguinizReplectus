@@ -4,11 +4,11 @@
 #include <ctype.h>
 
 #include "SayField.h"
+#include "pattern.h"
 
 #define MAX_INPUT_LEN 256
 
 #define FIND(IN, OUT) if (!strcasecmp(msg, IN)){printf(OUT);return true;}
-#define PATT(IN, OUT) if (strstr(aMsg, IN)){printf(OUT);return true;}
 
 bool FindMessage(const char* msg)
 {
@@ -24,7 +24,9 @@ bool FindPattern(const char* msg)
 		aMsg[i] = tolower(msg[i]);
 	}
 
-	PATT("hello", SayHello());
+	if (PattHello(aMsg))
+		return true;
+
 	return false;
 }
 
