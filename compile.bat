@@ -2,7 +2,7 @@
 :compile
 cls
 echo compiling LangunizReplectus ...
-g++ main.cpp -o lr_chatbot
+g++ src/*.cpp -o lr_chatbot
 echo done.
 pause >NUL
 goto compile

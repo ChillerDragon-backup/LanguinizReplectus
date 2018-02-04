@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ main.cpp -o lr_chatbot
+g++ src/*.cpp -o lr_chatbot
