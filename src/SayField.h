@@ -14,5 +14,6 @@
 
 const char * SayHello();
 const char * SayRandom();
+const char * SayYesNo();
 
 #endif // !SAYFIELD_H

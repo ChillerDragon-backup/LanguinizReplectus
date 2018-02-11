@@ -55,3 +55,26 @@ const char * SayRandom()
 
 	print_small();
 }
+
+const char * SayYesNo()
+{
+	SADD(0, "yes");
+	SADD(1, "Yes");
+	SADD(2, "yup");
+	SADD(3, "si");
+	SADD(4, "yea");
+	SADD(5, "yes...");
+	SADD(5, "no");
+	SADD(6, "nope");
+	SADD(7, "nu");
+	SADD(8, "No!");
+	SADD(9, "niet");
+	SADD(10, "no no no");
+	SADD(11, "nooo");
+	SADD(12, "No");
+	SADD(13, "yep");
+	SADD(14, "yes");
+	SADD(15, "Yeah");
+
+	print_small();
+}
